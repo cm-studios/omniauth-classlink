@@ -25,11 +25,6 @@ module OmniAuth
         {
           name: raw_info['DisplayName'],
           email: raw_info['Email'],
-          district_name: raw_info['Building'],
-          school_id: raw_info['TenantId'],
-          school_name: raw_info['Tenant'],
-          classlink_id: raw_info['UserId'],
-          external_id: raw_info['SourcedId'],
           role: raw_info['Role']
         }
       end
