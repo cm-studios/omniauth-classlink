@@ -12,7 +12,7 @@ module OmniAuth
       }
       option :fields, [:email, :profile]
       
-      uid{ raw_info['UserId'] }
+      uid{ "#{raw_info['SourcedId']}_#{raw_info['TenantId']}" }
 
       def authorize_params
         super.tap do |params|
